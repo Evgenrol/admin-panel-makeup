@@ -4,18 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-      "precommit": "lint-staged"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "prettier": "prettier --write",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,css,md,json,html}": [
-         "prettier --write",
-    "git add"
+      "prettier --write",
+      "git add"
     ]
   },
   "repository": {
@@ -29,7 +24,7 @@
   },
   "homepage": "https://github.com/Evgenrol/admin-panel-makeup#readme",
   "devDependencies": {
-    "husky": "^7.0.4",
+    "husky": "^7.0.0",
     "lint-staged": "^12.3.2",
     "prettier": "^2.5.1"
   }
