@@ -5,14 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier": "./node_modules/.bin/prettier --single-guote --write './scr/**/*.{ts,js,css,json}'",
-    "pre-commit": "lint-staged",
+      "precommit": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
-    "*.{js,css,md,json,html}": {"prettier --write",
-    "./node_modules/.bin/prettier --single-guote --write",
+    "*.{js,css,md,json,html}": [
+         "prettier --write",
     "git add"
-    }
+    ]
   },
   "repository": {
     "type": "git",
