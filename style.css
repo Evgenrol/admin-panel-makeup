@@ -3,69 +3,87 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: "Ubuntu", sans-serif;
 }
-
+:root {
+  --color-1: #a8a8ff;
+  --color-2: #8055ff;
+}
 .wrapper {
+  min-height: calc(100vh - 1rem);
   padding: 1rem 3rem 0px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
 
-.main__page-header {
-  font-size: 2rem;
-  background-color: rgb(168 168 255);
+.page-header {
+  height: 2rem;
+  background-color: var(--color-1);
   margin-bottom: 2rem;
+}
+.h2 {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 2rem;
+  padding: 0.5rem;
+  color: var(--color-2);
+  letter-spacing: -0.2px;
 }
 
 .filter {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #8055ff;
+  box-sizing: border-box;
+  border: 1px solid var(--color-1);
   margin-bottom: 2rem;
   padding: 0.5rem;
 }
-.filter__searchbar {
+.filter__searchbar-group {
+  display: flex;
+}
+.filter__searchbar-1 {
   height: 2rem;
   width: 256px;
-  background-color: #8055ff;
+  background-color: var(--color-2);
   margin-right: 0.5rem;
-  display: flex;
-  justify-content: space-between;
 }
-.filter__item-1 {
+.filter__searchbar-2 {
   height: 2rem;
   width: 2rem;
-  background-color: #8055ff;
+  background-color: var(--color-2);
 }
-.filter__item-2 {
+.filter__loading {
   height: 2rem;
   width: 2rem;
-  background-color: #8055ff;
+  background-color: var(--color-2);
 }
 
 .table {
   display: flex;
   flex-direction: column;
-  border: 1px solid #8055ff;
+  border: 1px solid var(--color-2);
+  height: 100%;
+  flex-grow: 1;
 }
 .table__header {
-  height: 2rem;
-  background-color: #8055ff;
-  height: 40px;
+  background-color: var(--color-2);
+  height: 48px;
 }
 .table__body {
   flex-grow: 1;
-  background-color: rgb(168 168 255);
-  height: 480px;
+  background-color: var(--color-1);
+  height: 516px;
   overflow-y: auto;
+  flex-grow: 1;
 }
 .table__footer {
   position: relative;
   position: sticky;
-  height: 2rem;
-  background-color: #8055ff;
-  height: 40px;
+  background-color: var(--color-2);
+  height: 48px;
   bottom: 0px;
 }
