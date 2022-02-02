@@ -10,7 +10,7 @@ body {
   --color-2: #8055ff;
 }
 .wrapper {
-  min-height: calc(100vh - 1rem);
+  min-height: calc(100vh);
   padding: 1rem 3rem 0px;
   display: flex;
   flex-direction: column;
