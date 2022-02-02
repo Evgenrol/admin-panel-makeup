@@ -32,6 +32,9 @@ body {
   color: var(--color-2);
   letter-spacing: -0.2px;
 }
+h2 {
+  color: var(--color-2);
+}
 
 .filter {
   display: flex;
