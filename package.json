@@ -1,0 +1,31 @@
+{
+  "name": "admin-panel-makeup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --write",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,css,md,json,html}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evgenrol/admin-panel-makeup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evgenrol/admin-panel-makeup/issues"
+  },
+  "homepage": "https://github.com/Evgenrol/admin-panel-makeup#readme",
+  "devDependencies": {
+    "husky": "^7.0.0",
+    "lint-staged": "^12.3.2",
+    "prettier": "^2.5.1"
+  }
+}
