@@ -9,6 +9,7 @@
   padding: 48px 48px;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
 }
 .search-row__empty {
   position: relative;
