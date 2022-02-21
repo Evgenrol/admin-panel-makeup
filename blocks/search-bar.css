@@ -11,12 +11,15 @@
   flex-direction: column;
   border-radius: 5px;
 }
-.search-row__empty {
+.search-row__input-row {
+  display: flex;
   position: relative;
   width: 256px;
-  display: flex;
   align-items: center;
   margin-bottom: 32px;
+}
+.search-row__input-row:last-child {
+  margin-bottom: 0;
 }
 .search-row__input {
   width: 100%;
@@ -40,12 +43,7 @@
   width: 16px;
   height: 16px;
 }
-.search-row__filled {
-  position: relative;
-  width: 256px;
-  display: flex;
-  align-items: center;
-}
+
 .search__x-icon {
   position: absolute;
   width: 16px;
